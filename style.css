@@ -1,0 +1,92 @@
+/* Background */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Card */
+.container {
+  background: rgba(20, 20, 40, 0.9);
+  padding: 25px;
+  border-radius: 20px;
+  width: 420px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Input Section */
+.input-area, .controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+input[type="text"], input[type="datetime-local"], select {
+  flex: 1;
+}
+
+button {
+  background: #4cafef;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2196f3;
+}
+
+/* Tasks */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #2c2c3c;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.completed span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Buttons */
+.actions button {
+  margin-left: 5px;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.actions button.complete { background: #4caf50; }
+.actions button.edit { background: #ffc107; }
+.actions button.delete { background: #ff5c5c; }
